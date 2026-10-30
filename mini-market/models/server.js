@@ -29,7 +29,7 @@ export class Server {
 
 //Metodo tres de mi clase server
 middleware(){
-    this.app.use(cora());
+    this.app.use(cors());
     this.app.use(express.static('public'));
     this.app.use(express.json());
 }
